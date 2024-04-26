@@ -37,7 +37,7 @@ class DataIngestion:
             )
 
         except Exception as e:
-            logging.info(CustomException(e, sys))
+            raise CustomException(e, sys)
 
 if __name__ == '__main__':
     obj = DataIngestion()
